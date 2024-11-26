@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { T, LanguagePicker } from '@transifex/react';
-import { tx, t } from "@transifex/native"; // Import t() for translations
+import { T, LanguagePicker, useLocale } from '@transifex/react'; // Import useLocale
+import { tx, t } from "@transifex/native"; // Import t for translations
 import axios from 'axios';
 import './App.css';
 
@@ -8,12 +8,15 @@ tx.init({
   token: '1/323de0a2d74334d916313a51f1a5d1def0b5d859', // Your Transifex token
 });
 
+// Set default language to English
 tx.setCurrentLocale('en');
 
 function App() {
     const [users, setUsers] = useState([]);
     const [selectedUser, setSelectedUser] = useState(null);
     const [questions, setQuestions] = useState([]);
+
+    const locale = useLocale(); // Get the currently selected locale
 
     // Fetch users on mount
     useEffect(() => {
@@ -67,7 +70,10 @@ function App() {
                         </h2>
                         <ul>
                             {questions.map((q) => (
-                                <li key={q.id}>{t(`${q.id}.question`)}</li> // Use t() with the key format
+                                <li key={q.id}>
+                                    {/* Use t() to translate dynamically and re-render when locale changes */}
+                                    {t(`${q.id}.question`)}
+                                </li>
                             ))}
                         </ul>
                     </div>
