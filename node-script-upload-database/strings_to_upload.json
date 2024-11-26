@@ -1,0 +1,74 @@
+[
+  {
+    "type": "resource_strings",
+    "attributes": {
+      "key": "1.question",
+      "strings": {
+        "other": "What is your favorite color?"
+      },
+      "context": "from database"
+    },
+    "relationships": {
+      "resource": {
+        "data": {
+          "type": "resources",
+          "id": "o:sandydlr:p:react-database:r:react-database"
+        }
+      }
+    }
+  },
+  {
+    "type": "resource_strings",
+    "attributes": {
+      "key": "2.question",
+      "strings": {
+        "other": "What is your dream job?"
+      },
+      "context": "from database"
+    },
+    "relationships": {
+      "resource": {
+        "data": {
+          "type": "resources",
+          "id": "o:sandydlr:p:react-database:r:react-database"
+        }
+      }
+    }
+  },
+  {
+    "type": "resource_strings",
+    "attributes": {
+      "key": "3.question",
+      "strings": {
+        "other": "What is your favorite movie?"
+      },
+      "context": "from database"
+    },
+    "relationships": {
+      "resource": {
+        "data": {
+          "type": "resources",
+          "id": "o:sandydlr:p:react-database:r:react-database"
+        }
+      }
+    }
+  },
+  {
+    "type": "resource_strings",
+    "attributes": {
+      "key": "4.question",
+      "strings": {
+        "other": "Where would you like to travel?"
+      },
+      "context": "from database"
+    },
+    "relationships": {
+      "resource": {
+        "data": {
+          "type": "resources",
+          "id": "o:sandydlr:p:react-database:r:react-database"
+        }
+      }
+    }
+  }
+]

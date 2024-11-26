@@ -18,3 +18,16 @@ ul {
 li {
   margin: 10px 0;
 }
+
+.language-picker-wrapper {
+  display: flex;
+  flex-direction: column; /* Align label above the picker */
+  align-items: center;    /* Center both label and picker */
+  margin: 20px 0;         /* Add some spacing */
+}
+
+.language-label {
+  font-size: 1.2em; /* Slightly larger font size */
+  margin-bottom: 5px; /* Add space between label and picker */
+}
+
